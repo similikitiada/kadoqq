@@ -1250,6 +1250,57 @@
                 .76rem;
         }
 
+        .article-grid{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:18px;
+}
+
+.article-card{
+    padding:27px 25px;
+    border:1px solid rgba(255,255,255,.07);
+    border-radius:var(--radius);
+    background:var(--card);
+}
+
+.article-card-label{
+    color:var(--red-light);
+    font-size:.74rem;
+    font-weight:900;
+    letter-spacing:1.2px;
+    margin-bottom:12px;
+}
+
+.article-card h3{
+    font-size:1.08rem;
+    line-height:1.35;
+    margin-bottom:10px;
+}
+
+.article-card p{
+    color:var(--muted);
+    font-size:.87rem;
+    margin-bottom:17px;
+}
+
+.article-card a{
+    color:var(--gold-light);
+    font-size:.82rem;
+    font-weight:800;
+}
+
+@media(max-width:900px){
+    .article-grid{
+        grid-template-columns:repeat(2,1fr);
+    }
+}
+
+@media(max-width:700px){
+    .article-grid{
+        grid-template-columns:1fr;
+    }
+}
+
 
         /* RESPONSIVE */
 
@@ -1570,190 +1621,188 @@
 
         <!-- TOPICS -->
 
-        <section class="section">
+        <!-- ARTICLES -->
 
-            <div class="container">
+<section class="section">
 
+    <div class="container">
 
-                <div class="section-header">
+        <div class="section-header">
 
-                    <div class="section-kicker">
-                        TOPIK INFORMASI
-                    </div>
-
-                    <h2>
-                        Jelajahi
-                        <span>Topik KADOQQ</span>
-                    </h2>
-
-                    <p>
-                        Beberapa kelompok topik yang akan
-                        dikembangkan menjadi artikel dan
-                        referensi di KADOQQ Hub.
-                    </p>
-
-                </div>
-
-
-                <div class="topic-grid">
-
-
-                    <article class="topic-card">
-
-                        <div class="topic-number">
-                            TOPIK 01
-                        </div>
-
-                        <h3>
-                            Mengenal KADOQQ
-                        </h3>
-
-                        <p>
-                            Informasi mengenai brand, KADOQQ Hub,
-                            dan berbagai hal dasar yang membantu
-                            pengunjung memahami portal.
-                        </p>
-
-                        <a
-    class="topic-status"
-    href="/tentang/"
->
-    Pelajari Tentang KADOQQ →
-</a>
-
-                    </article>
-
-
-                    <article class="topic-card">
-
-                        <div class="topic-number">
-                            TOPIK 02
-                        </div>
-
-                        <h3>
-                            Panduan
-                        </h3>
-
-                        <p>
-                            Referensi dan panduan yang membantu
-                            pengunjung menemukan informasi dan
-                            memahami bagian-bagian portal.
-                        </p>
-
-                        <a
-                            class="topic-status"
-                            href="/panduan/"
-                        >
-                            Buka Pusat Panduan →
-                        </a>
-
-                    </article>
-
-
-                    <article class="topic-card">
-
-                        <div class="topic-number">
-                            TOPIK 03
-                        </div>
-
-                        <h3>
-                            Keamanan Online
-                        </h3>
-
-                        <p>
-                            Informasi umum mengenai kebiasaan
-                            keamanan digital, perlindungan akun,
-                            dan penggunaan layanan online secara
-                            lebih aman.
-                        </p>
-
-                        <a
-    class="topic-status"
-    href="/panduan/"
->
-    Lihat Panduan Keamanan →
-</a>
-
-                    </article>
-
-
-                    <article class="topic-card">
-
-                        <div class="topic-number">
-                            TOPIK 04
-                        </div>
-
-                        <h3>
-                            Informasi & Referensi
-                        </h3>
-
-                        <p>
-                            Artikel informatif yang membahas
-                            berbagai topik relevan berdasarkan
-                            kebutuhan pengunjung.
-                        </p>
-
-                        <span class="topic-status">
-    Referensi KADOQQ
-</span>
-
-                    </article>
-
-
-                    <article class="topic-card">
-
-                        <div class="topic-number">
-                            TOPIK 05
-                        </div>
-
-                        <h3>
-                            Pertanyaan Umum
-                        </h3>
-
-                        <p>
-                            Kumpulan pertanyaan yang sering
-                            muncul dan jawaban yang membantu
-                            pengunjung memahami informasi portal.
-                        </p>
-
-                        <a
-                            class="topic-status"
-                            href="/faq/"
-                        >
-                            Buka FAQ →
-                        </a>
-
-                    </article>
-
-
-                    <article class="topic-card">
-
-                        <div class="topic-number">
-                            TOPIK 06
-                        </div>
-
-                        <h3>
-                            Wawasan Digital
-                        </h3>
-
-                        <p>
-                            Materi informatif yang berkaitan
-                            dengan pengalaman pengguna dan
-                            perkembangan informasi digital.
-                        </p>
-
-                        <span class="topic-status">
-    Wawasan Digital
-</span>
-
-                    </article>
-
-
-                </div>
-
+            <div class="section-kicker">
+                ARTIKEL TERBARU
             </div>
 
-        </section>
+            <h2>
+                Jelajahi
+                <span>Artikel KADOQQ</span>
+            </h2>
+
+            <p>
+                Temukan artikel dan referensi yang disusun
+                untuk membantu pengunjung memahami berbagai
+                informasi di KADOQQ Hub.
+            </p>
+
+        </div>
+
+
+        <div class="article-grid">
+
+
+            <!-- ARTICLE 6 -->
+
+            <article class="article-card">
+
+                <div class="article-card-label">
+                    KEAMANAN DIGITAL
+                </div>
+
+                <h3>
+                    Cara Memastikan Situs Login yang Benar
+                </h3>
+
+                <p>
+                    Pelajari cara memeriksa domain, HTTPS,
+                    tautan, dan informasi login sebelum
+                    mengakses sebuah situs.
+                </p>
+
+                <a href="/artikel/cara-memastikan-situs-login-yang-benar/">
+                    Baca Artikel →
+                </a>
+
+            </article>
+
+
+            <!-- ARTICLE 5 -->
+
+            <article class="article-card">
+
+                <div class="article-card-label">
+                    KEAMANAN DIGITAL
+                </div>
+
+                <h3>
+                    Cara Membuat Kata Sandi yang Lebih Aman
+                </h3>
+
+                <p>
+                    Panduan mengenai penggunaan kata sandi,
+                    perlindungan kredensial, dan kebiasaan
+                    keamanan akun.
+                </p>
+
+                <a href="/artikel/cara-membuat-kata-sandi-yang-aman/">
+                    Baca Artikel →
+                </a>
+
+            </article>
+
+
+            <!-- ARTICLE 4 -->
+
+            <article class="article-card">
+
+                <div class="article-card-label">
+                    KEAMANAN DIGITAL
+                </div>
+
+                <h3>
+                    Cara Mengenali Tautan Mencurigakan
+                </h3>
+
+                <p>
+                    Kenali beberapa tanda yang perlu diperiksa
+                    sebelum membuka atau menggunakan sebuah
+                    tautan.
+                </p>
+
+                <a href="/artikel/cara-mengenali-tautan-mencurigakan/">
+                    Baca Artikel →
+                </a>
+
+            </article>
+
+
+            <!-- ARTICLE 3 -->
+
+            <article class="article-card">
+
+                <div class="article-card-label">
+                    KEAMANAN DIGITAL
+                </div>
+
+                <h3>
+                    Tips Menjaga Keamanan Akun Online
+                </h3>
+
+                <p>
+                    Kebiasaan sederhana yang dapat membantu
+                    menjaga informasi dan akses akun online.
+                </p>
+
+                <a href="/artikel/tips-menjaga-keamanan-akun-online/">
+                    Baca Artikel →
+                </a>
+
+            </article>
+
+
+            <!-- ARTICLE 2 -->
+
+            <article class="article-card">
+
+                <div class="article-card-label">
+                    KADOQQ HUB
+                </div>
+
+                <h3>
+                    Cara Menggunakan KADOQQ Hub
+                </h3>
+
+                <p>
+                    Panduan untuk menemukan informasi melalui
+                    halaman dan struktur yang tersedia di
+                    KADOQQ Hub.
+                </p>
+
+                <a href="/artikel/cara-menggunakan-kadoqq-hub/">
+                    Baca Artikel →
+                </a>
+
+            </article>
+
+
+            <!-- ARTICLE 1 -->
+
+            <article class="article-card">
+
+                <div class="article-card-label">
+                    KADOQQ HUB
+                </div>
+
+                <h3>
+                    Mengenal KADOQQ Hub
+                </h3>
+
+                <p>
+                    Mengenal fungsi KADOQQ Hub sebagai pusat
+                    informasi, panduan, artikel, dan referensi.
+                </p>
+
+                <a href="/artikel/mengenal-kadoqq-hub/">
+                    Baca Artikel →
+                </a>
+
+            </article>
+
+
+        </div>
+
+    </div>
+
+</section>
 
 
         <!-- INFORMATION -->
